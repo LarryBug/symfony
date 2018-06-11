@@ -1,0 +1,15 @@
+{# app/Resources/views/larry/form.html.twig #}
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Register Form{% endblock %}</title>
+</head>
+<body>
+Register Form:<br>
+-------------------
+{{ form_start(form)}}
+{{ form_widget(form) }}
+<div style="color: red">{{pwd}}</div>
+{{ form_end(form) }}
+</body>
+</html>

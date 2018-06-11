@@ -1,0 +1,87 @@
+{# app/Resources/views/larry/product/list.html.twig #}
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Products List{% endblock %}</title>
+</head>
+<script language="javascript">
+    function deleteCheck() {
+        if (confirm("Are you sure delete it?")) {
+            alert("Delete successfully!");
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    function searchCheck() {
+        if (document.searchForm.price.value=="") {
+            alert("Please enter product price at least!");
+            return false;
+        }
+    }
+</script>
+
+<body>
+<b>Product List:</b><br>
+------------------------------------------------<br>
+Search product:
+<form name="searchForm" action="/product/search" method="post" onsubmit="return searchCheck();">
+    Product Id： <input type="text" name="product_id" maxlength="11" onkeyup="value=value.replace(/[^\d]/g,'')"/><br>
+    Product Name： <input type="text" name="name" maxlength="30" /><br>
+    Product Description： <input type="text" name="description" maxlength="30"/><br>
+    Product Price：
+    <select name="operation">
+        <option value=">"> > </option>
+        <option value="="> = </option>
+        <option value="<"> < </option>
+    </select> <input type="text" name="price" maxlength="10" onkeyup="value=value.replace(/[^\d^\.]+/g,'')"> <br>
+    <br>
+    <input type="submit" value="Search Product"></a>
+  <a href="{{ path('list') }}"> <input type="button" value="Search All Products"></a>
+</form>
+------------------------------------------------<br>
+<div style="color: #053bff">{{ msg }}</div>
+------------------------------------------------<br>
+
+<table border="1" width="100%">
+    <tr>
+        <th width="120">
+            <a href="/product/sort/id_up"> <img src="{{(asset('images/up.png')) }}" height="15" width="15"> </a>
+            <style tyle="css/style">
+                a{ text-decoration:none}
+            </style>
+            Product Id
+            <a href="/product/sort/id_down"> <img src="{{(asset('images/down.png')) }}" height="15" width="15"> </a>
+        </th>
+        <th width="300">
+            <a href="/product/sort/name_up"> <img src="{{(asset('images/up.png')) }}" height="15" width="15"> </a>
+            <style tyle="css/style">
+                a{ text-decoration:none}
+            </style>
+            Product Name </th>
+        <th width="600">Product Description </th>
+        <th>
+            <a href="/product/sort/price_up"> <img src="{{(asset('images/up.png')) }}" height="15" width="15"> </a>
+            <style tyle="css/style">
+                a{ text-decoration:none}
+            </style>
+            Product Price ( ¥ )
+            <a href="/product/sort/price_down"> <img src="{{(asset('images/down.png')) }}" height="15" width="15"> </a>
+        </th>
+        <th>Action</th>
+    </tr>
+        {% for product in products %}
+    <tr>
+            <td>{{ product.id }}</td>
+            <td>{{ product.name }}</td>
+            <td>{{ product.description }}</td>
+            <td>{{ product.price }}</td>
+        <td align="center"> <a href="/product/view/{{ product.id }}">View/Edit</a> | <a href="/product/delete/{{ product.id }}" onclick="return deleteCheck()">Delete</a> </td>
+    </tr>
+        {% endfor %}
+</table>
+<br>
+<a href="/product/add"><input type="button" value="Add one new product"></a>
+</body>
+</html>

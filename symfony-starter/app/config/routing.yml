@@ -1,0 +1,11 @@
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
+
+larry:
+#    path: /time
+#    defaults: { _controller: LarryBundle:Time:displayCurrentTime}
+
+    resource: '@LarryBundle/Controller/'
+    type: annotation
+

@@ -1,0 +1,36 @@
+{# app/Resources/views/larry/form_success.html.twig #}
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Register successfully{% endblock %}</title>
+</head>
+<body>
+
+Register successfully!<br>
+--------------------------<br>
+Your profile:<br>
+
+username: {{ form.username }}<br>
+
+email: {{ form.email }}<br>
+
+sex: {{ form.sex }}<br>
+
+birthday: {{ form.birthday|date("Y-m-d") }}<br>
+
+country: {{ form.country }}<br>
+
+blog: {{ form.blog }}<br>
+
+hobby:
+{% for value in form.hobby %}
+    {{ value }}
+{% endfor %}
+<br>
+
+photo: {{ form.photo }} <br>
+
+note: {{ form.note }} <br>
+
+</body>
+</html>

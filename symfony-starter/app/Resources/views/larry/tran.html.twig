@@ -1,0 +1,54 @@
+{# app/Resources/views/larry/base.html.twig #}
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Test{% endblock %}</title>
+
+    <script>
+        function getTrans111(locate) {
+            if(locate ==""){
+                locate = 'en';
+            }
+            if (window.XMLHttpRequest) {
+                // IE7+, Firefox, Chrome, Opera, Safari 执行代码
+                xmlhttp=new XMLHttpRequest();
+            } else {
+                // IE6, IE5 执行代码
+                xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            xmlhttp.onreadystatechange=function() {
+                if (xmlhttp.readyState==4 && xmlhttp.status==200)
+                {
+                    document.getElementById("locate").innerHTML=xmlhttp.responseText;
+                }
+            }
+            xmlhttp.open("GET","/tran?locate="+locate,true);
+            xmlhttp.send();
+
+        }
+    </script>
+    <script>
+    function getTrans(locate)
+    {
+        window.location.replace("/tran?locate="+locate);
+    }
+    </script>
+</head>
+<body>
+Translate to：
+
+<select name="locate" onchange="getTrans(this.value)">
+    <option value ="en" >Default(English)</option>
+    <option value ="zh" >Chinese</option>
+    <option value ="jp" >Japanese</option>
+</select>
+{#<a href="/tran"><input type="submit" value="Translate"></a>#}
+<br>
+
+{{ translated1 }} <br>
+{{ translated2 }} <br>
+{{ translated3 }} <br>
+{#{{ 'test.msg'|trans }} <br>#}
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+# messages.jp.yml
+# key: value
+'Hello %name%': こんにちは %name%
+hello.%name%: こんにちは%name%
+Symfony is great: Symfonyは本当にとてもすばらしいです
+test.msg: 情報をテストします

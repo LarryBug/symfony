@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View/Edit product</title>
+</head>
+<body>
+<b>View/Edit product:</b><br>
+------------------------------------------------<br>
+{% if msg != "" %}
+    <div style="color: #053bff"> {{ msg }}</div>
+------------------------------------------------<br>
+{% endif %}
+
+{{ form_start(form)}}
+{{ form_widget(form) }}
+{{ form_end(form) }}
+<a href="/product/list"><input type="button" value="Return Product list"></a>
+</body>
+</html>

@@ -1,0 +1,23 @@
+# Learn more about services, parameters and containers at
+# https://symfony.com/doc/current/service_container.html
+parameters:
+    #parameter_name: value
+    command.default_name: Javier
+
+services:
+    #service_name:
+    app.command.my_command:
+        class: LarryBundle\Command\SendEmailCommand
+        arguments: ["%command.default_name%"]
+        tags:
+            - { name: console.command }
+
+    app.exception_listener:
+         class: LarryBundle\EventListener\ExceptionListener
+         tags:
+              - { name: kernel.event_listener, event: kernel.exception, priority: 100 }
+
+
+#      class: AppBundle\Directory\ClassName
+#      arguments: ['@another_service_name', 'plain_value', '%parameter_name%']
+#

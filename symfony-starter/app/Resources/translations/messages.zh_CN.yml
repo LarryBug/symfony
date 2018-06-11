@@ -1,0 +1,6 @@
+# messages.zh_CN.yml
+# key: value
+Symfony is great: Symfony真的很棒
+'Hello %name%': 你好啊 %name%
+hello.%name%: 你好啊 %name%
+test.msg: 测试消息

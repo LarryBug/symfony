@@ -1,0 +1,30 @@
+{# app/Resources/views/larry/base.html.twig #}
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Test{% endblock %}</title>
+</head>
+<body>
+<div id="sidebar">
+    {% block sidebar %}
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/task">Task</a></li>
+            <li><a href="/time">Time</a></li>
+        </ul>
+    {% endblock %}
+</div>
+{{ block('title') }} <br>
+
+{% for letter in 'a'..'z' %}
+     {{ letter }}
+{% endfor %}
+
+<div id="content">
+    {% block body %} {% endblock %}
+</div>
+
+
+
+</body>
+</html>
