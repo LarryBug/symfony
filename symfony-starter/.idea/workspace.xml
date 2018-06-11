@@ -16,7 +16,17 @@
     <favorites_list name="symfony-starter" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file leaf-file-name="config.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="393">
+              <caret line="70" column="24" lean-forward="true" selection-start-line="70" selection-start-column="24" selection-end-line="70" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -121,8 +131,8 @@
         <option value="$PROJECT_DIR$/app/Resources/views/larry/trans.html.twig" />
         <option value="$PROJECT_DIR$/src/LarryBundle/Controller/BaseController.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/larry/tran.html.twig" />
-        <option value="$PROJECT_DIR$/app/config/config.yml" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml" />
+        <option value="$PROJECT_DIR$/app/config/config.yml" />
       </list>
     </option>
   </component>
@@ -198,7 +208,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -221,6 +230,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -324,11 +334,12 @@
       <workItem from="1528288031573" duration="3001000" />
       <workItem from="1528337689143" duration="19922000" />
       <workItem from="1528684496522" duration="60000" />
+      <workItem from="1528686169331" duration="599000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="205481000" />
+    <option name="totallyTimeSpent" value="206080000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -340,20 +351,21 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="728" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="729" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49603805" visible="true" weight="0.17689823" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49603805" visible="true" weight="0.21324718" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32967034" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.5007153" side_tool="true" weight="0.37658226" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
       <window_info id="Structure" order="1" sideWeight="0.5020492" side_tool="true" weight="0.16380544" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.25673535" />
-      <window_info id="Favorites" order="2" sideWeight="0.503962" side_tool="true" weight="0.18659128" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4995885" weight="0.33544305" />
+      <window_info id="Favorites" order="2" sideWeight="0.503962" side_tool="true" weight="0.18659128" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="PHP-CGI Server" order="10" sideWeight="0.49928468" weight="0.3195739" />
@@ -365,10 +377,10 @@
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4995633" weight="0.32646593" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49603805" visible="true" weight="0.22940226" />
       <window_info id="Structure" order="1" sideWeight="0.5020492" side_tool="true" weight="0.16380544" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -382,7 +394,7 @@
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.23771791" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4995885" weight="0.2875" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.5007153" side_tool="true" weight="0.3771791" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="Favorites" order="2" sideWeight="0.503962" side_tool="true" weight="0.18659128" />
@@ -696,20 +708,17 @@
     <entry file="file://$PROJECT_DIR$/app/config/parameters.yml.dist">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="72" column="24" lean-forward="true" selection-start-line="72" selection-start-column="24" selection-end-line="72" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LarryBundle/Controller/BaseController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="423">
           <caret line="49" column="89" selection-start-line="49" selection-start-column="89" selection-end-line="49" selection-end-column="89" />
-          <folding>
-            <element signature="e#125#182#0#PHP" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="70" column="24" lean-forward="true" selection-start-line="70" selection-start-column="24" selection-end-line="70" selection-end-column="24" />
         </state>
       </provider>
     </entry>
